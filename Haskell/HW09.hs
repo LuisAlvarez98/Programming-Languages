@@ -103,6 +103,12 @@ iSort [] = []
 iSort [x] = [x]
 iSort (h:t) = isSortHelper (iSort t) h
 
+
+enigma01 :: [Char] -> Int
+enigma01 [_, ’b’, c] = 0
+enigma01 (_: ’b’: c) = 1
+enigma01 lst = 2
+
 -- === Test cases ===
 
 main = do 
