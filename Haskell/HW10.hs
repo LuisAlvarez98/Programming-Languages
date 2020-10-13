@@ -21,7 +21,7 @@ distance (Point x1 y1) (Point x2 y2) = sqrt(((x1-x2) ** 2) + ((y1-y2) ** 2))
 data Complex = Complex Int Int deriving Show
 
 add :: Complex -> Complex -> Complex
-add (Complex a b) (Complex c d) = (Complex (a + b) (c + d))
+add (Complex a b) (Complex c d) = (Complex (a + c) (b + d))
 
 multiply :: Complex -> Int -> Complex
 multiply (Complex a b) c = (Complex (a * c) b)
